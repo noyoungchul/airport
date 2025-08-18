@@ -3,16 +3,20 @@ from ultralytics import solutions
 
 cap = cv2.VideoCapture("walking.avi")
 
-queue_region = [(20, 400), (1080, 400), (1080, 360), (20, 360)]
+# ROI 영역 지정
+queue_region = [(100, 500), (1000, 500), (1000, 200), (100, 200)]
+
 
 queuemanager = solutions.QueueManager(
-    model="yolo11n.pt",
-    region=queue_region,
-    line_width=3,
-    show=False  
+    model="yolo11n.pt",   # YOLO 모델
+    region=queue_region,  # ROI 영역
+    line_width=3,         # ROI 라인 두께
+    show=False,           # 디버그용 내부 창 표시 여부
+    #conf=0.5,             # 신뢰도 50% 이상 인식
+    #classes=[0]           # 사람만 인식
 )
 
-MAX_CAPACITY = 10  # 혼잡도 계산 기준 최대 인원
+MAX_CAPACITY = 6  # 혼잡도 계산 기준 최대 인원
 GAUGE_MAX_WIDTH = 300  # 게이지바 최대 길이 (px)
 GAUGE_HEIGHT = 25      # 게이지바 높이
 
@@ -31,11 +35,11 @@ while cap.isOpened():
 
     # 혼잡도 색상 선택
     if congestion < 50:
-        color = (0, 255, 0)   # 초록
+        color = (0, 255, 0)   # 초록 (여유)
     elif congestion < 80:
-        color = (0, 165, 255) # 주황
+        color = (0, 165, 255) # 주황 (보통)
     else:
-        color = (0, 0, 255)   # 빨강
+        color = (0, 0, 255)   # 빨강 (혼잡)
 
     # 혼잡도 텍스트
     cv2.putText(results.plot_im, f"People: {people_count}", (30, 50),
