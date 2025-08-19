@@ -4,7 +4,8 @@ from ultralytics import solutions
 cap = cv2.VideoCapture("airport.mp4")
 
 # ROI 영역 지정
-queue_region = [(100, 500), (1000, 500), (1000, 200), (100, 200)]
+#queue_region = [(100, 500), (1000, 500), (1000, 200), (100, 200)]
+queue_region = [(50, 650), (1200, 650), (1200, 150), (50, 150)]
 
 queuemanager = solutions.QueueManager(
     model="yolo11n.pt",   # YOLO 모델
