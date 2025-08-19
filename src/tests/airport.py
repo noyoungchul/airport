@@ -1,29 +1,31 @@
 import cv2
 from ultralytics import solutions
 
-cap = cv2.VideoCapture("walking.avi")
+cap = cv2.VideoCapture("airport.mp4")
 
 # ROI 영역 지정
 queue_region = [(100, 500), (1000, 500), (1000, 200), (100, 200)]
-
 
 queuemanager = solutions.QueueManager(
     model="yolo11n.pt",   # YOLO 모델
     region=queue_region,  # ROI 영역
     line_width=3,         # ROI 라인 두께
     show=False,           # 디버그용 내부 창 표시 여부
-    #conf=0.5,             # 신뢰도 50% 이상 인식
-    #classes=[0]           # 사람만 인식
+    conf=0.2,           # 신뢰도 50% 이상 인식
+    classes=[0]          # 사람만 인식
 )
 
-MAX_CAPACITY = 6  # 혼잡도 계산 기준 최대 인원
-GAUGE_MAX_WIDTH = 300  # 게이지바 최대 길이 (px)
-GAUGE_HEIGHT = 25      # 게이지바 높이
+MAX_CAPACITY = 10          # 혼잡도 계산 기준 최대 인원
+GAUGE_MAX_WIDTH = 300     # 게이지바 최대 길이 (px)
+GAUGE_HEIGHT = 25         # 게이지바 높이
 
 while cap.isOpened():
     success, im0 = cap.read()
     if not success:
         break
+
+    # 영상 크기 줄이기 (예: 50%)
+    im0 = cv2.resize(im0, (0, 0), fx=0.5, fy=0.5)
 
     results = queuemanager(im0)
 
