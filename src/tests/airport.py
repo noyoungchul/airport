@@ -8,7 +8,7 @@ cap = cv2.VideoCapture("airport.mp4")
 queue_region = [(50, 650), (1200, 650), (1200, 150), (50, 150)]
 
 queuemanager = solutions.QueueManager(
-    model="yolo11n.pt",   # YOLO 모델
+    model="yolov8m.pt",   # YOLO 모델
     region=queue_region,  # ROI 영역
     line_width=3,         # ROI 라인 두께
     show=False,           # 디버그용 내부 창 표시 여부
