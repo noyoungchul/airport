@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
 공항 CCTV 안내방송
 =============
 공항 CCTV로 사람들의 혼잡도에 따른 안내방송
 
 ## 개발기간(2025.08.13 ~ 2025.08.21)
+=======
+공항 CCTV로 혼잡도에 따른 안내방송
+=============
+공항 cctv 안내방송
+>>>>>>> Stashed changes
 
 ## 관련제품 (링크)
 - [에스카](http://www.escacctv.com/bbs/board.php?bo_table=Product_01&wr_id=27)
@@ -15,6 +21,7 @@ opencv와 yolo를 통하여 사람들을 인식하여 혼잡도를 잡아준다.
 
 # 진행상황
 
+<<<<<<< Updated upstream
 ## 여유있는 상태
 <img width="960" height="566" alt="여유있는 상태" src="https://github.com/user-attachments/assets/51ef14a2-b801-4c22-ab4d-f5bfc17ce481" />
 
@@ -23,3 +30,7 @@ opencv와 yolo를 통하여 사람들을 인식하여 혼잡도를 잡아준다.
 
 ## 혼잡한 상태
 <img width="952" height="567" alt="혼잡한 상태" src="https://github.com/user-attachments/assets/8b52440a-91f5-46db-9c37-8aa32055351b" />
+=======
+# 진행상황
+
+>>>>>>> Stashed changes
