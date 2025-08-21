@@ -12,7 +12,7 @@ queuemanager = solutions.QueueManager(
     region=queue_region,  # ROI 영역
     line_width=3,         # ROI 라인 두께
     show=False,           # 디버그용 내부 창 표시 여부
-    conf=0.2,           # 신뢰도 50% 이상 인식
+    conf=0.2,           # 신뢰도 20% 이상 인식
     classes=[0]          # 사람만 인식
 )
 
