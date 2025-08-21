@@ -3,19 +3,22 @@
 =============
 공항 cctv 혼잡도를 감지하여 알려주는 프로젝트
 
+## 프로젝트 개요
+이 프로젝트는 공항의 CCTV를 통하여 사람들의 혼잡도를 측정하여 혼잡도를 측정하고
+혼잡시에 경고메시지를 알려주는 프로젝트입니다.
+
+## 목표
+- yolo를 통하여 사람을 인식한다.
+- roi를 지정하여 필요없는 부분은 배제합니다.
+- 사람들의 혼잡도를 측정하여 경고메시지를 알려준다.
+
 
 ## 관련제품 (링크)
 - [에스카](http://www.escacctv.com/bbs/board.php?bo_table=Product_01&wr_id=27)
 
-## 한계점
-공항의 사람들의 혼잡도를 정확히 잡을수 있을지 
 
-## 개선점
-opencv와 yolo를 통하여 사람들을 인식하여 혼잡도를 잡아준다.
+# 진행 결과
 
-# 진행상황
-
-<<<<<<< Updated upstream
 ## 여유있는 상태
 <img width="960" height="566" alt="여유있는 상태" src="https://github.com/user-attachments/assets/51ef14a2-b801-4c22-ab4d-f5bfc17ce481" />
 
@@ -25,6 +28,3 @@ opencv와 yolo를 통하여 사람들을 인식하여 혼잡도를 잡아준다.
 ## 혼잡한 상태
 <img width="952" height="567" alt="혼잡한 상태" src="https://github.com/user-attachments/assets/8b52440a-91f5-46db-9c37-8aa32055351b" />
 =======
-# 진행상황
-
->>>>>>> Stashed changes
