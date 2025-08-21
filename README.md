@@ -8,10 +8,10 @@
 - [에스카](http://www.escacctv.com/bbs/board.php?bo_table=Product_01&wr_id=27)
 
 ## 한계점
-공항의 사람들의
+공항의 사람들의 혼잡도를 정확히 잡을수 있을지 
 
 ## 개선점
-opencv와 yo
+opencv와 yolo를 통하여 사람들을 인식하여 혼잡도를 잡아준다.
 
 
 ## 여유있는 상태
