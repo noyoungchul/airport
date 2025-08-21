@@ -13,6 +13,7 @@
 ## 개선점
 opencv와 yolo를 통하여 사람들을 인식하여 혼잡도를 잡아준다.
 
+# 진행상황
 
 ## 여유있는 상태
 <img width="960" height="566" alt="여유있는 상태" src="https://github.com/user-attachments/assets/51ef14a2-b801-4c22-ab4d-f5bfc17ce481" />
