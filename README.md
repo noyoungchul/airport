@@ -1,14 +1,8 @@
-<<<<<<< Updated upstream
-공항 CCTV 안내방송
-=============
-공항 CCTV로 사람들의 혼잡도에 따른 안내방송
 
-## 개발기간(2025.08.13 ~ 2025.08.21)
-=======
-공항 CCTV로 혼잡도에 따른 안내방송
+공항 CCTV로 혼잡도 감지 프로젝트
 =============
-공항 cctv 안내방송
->>>>>>> Stashed changes
+공항 cctv 혼잡도를 감지하여 알려주는 프로젝트
+
 
 ## 관련제품 (링크)
 - [에스카](http://www.escacctv.com/bbs/board.php?bo_table=Product_01&wr_id=27)
